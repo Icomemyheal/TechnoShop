@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+.product-link{
+    font-size:18px;
+    text-decoration: none;
+    color:#2a2a2a;
+}
+.col-sm{
+    border-right: 1px solid #e9e9e9;
+}
+.custom-footer{
+    position: relative;
+    top:542px;
+}
+.block-style{
+    display: block;
+}
+.product-container{
+    padding-top:40px;
+}
+.title__categories{
+    font-size: 24px;
+    color:#2a2a2a;
+    font-weight:400;
+    margin-top:20px;
+}
+.custom-card{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    flex-wrap:wrap;
+    border:1px solid #9b9b9b;
+    border-radius:15px;
+    padding:0px 20px 20px 20px;
+    max-width:18rem;
+    margin-right:20px;
+    margin-bottom:60px;
+}
+.card-text{
+    font-family: 'Open Sans', sans-serif;
+    font-size:18px;
+}
+.card-product-container{
+    margin-left:36px;
+}
+.buttons-container a{
+    margin-right:4px;
+}
+.custom-card-title{
+    margin-top:10px;
+    margin-bottom:10px;
+}
+.h3-custom-cpu-title{
+    margin-top:30px;
+    margin-bottom:50px;
+}
+.card-header{
+    font-family: 'Open Sans', sans-serif;
+}
+.btns-container-basket > form > button{
+    margin-right:5px;
+}
+.btns-container-basket > span{
+    margin-right:5px;
+    padding-top:12px;
+}
+.basket-div > div:last-child{
+    margin-left:15px;
+    width:300px;
+}
+.basket-link{
+    text-decoration: none;
+    color:#1d1d1d;
+}
+.basket-link:hover{
+    color:#FFFF;
+}
