@@ -17,4 +17,7 @@ class Product extends Model
         }
         return $this->price;
     }
+    public function getOldPrice(){
+        return ceil(($this->price + ($this->price / 2)));
+    }
 }

@@ -1,0 +1,68 @@
+@media screen and (min-width: 375px) {
+  .container {
+    max-width: 375px;
+  }
+}
+@media screen and (min-width: 425px) {
+  .container {
+    max-width: 425px;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 450px;
+  }
+}
+@media screen and (min-width: 576px) {
+  .container {
+    max-width: 576px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 738px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .container {
+    max-width: 990px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1170px;
+  }
+}
+@media screen and (min-width: 1360px) {
+  .container {
+    max-width: 1350px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .container {
+    max-width: 1410px;
+  }
+}
+@media screen and (min-width: 1560px) {
+  .container {
+    max-width: 1530px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+@media screen and (min-width: 1700px) {
+  .container {
+    max-width: 1600px;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .container {
+    max-width: 1820px;
+    margin: 0 auto;
+  }
+}/*# sourceMappingURL=mixin.css.map */

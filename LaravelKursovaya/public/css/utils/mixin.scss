@@ -1,0 +1,76 @@
+@mixin min($width) {
+    @media screen and (min-width: #{$width}) {
+        @content;
+    }
+}
+@include min(375px){
+    .container{
+        max-width:375px;
+    }
+}
+@include min(425px) {
+    .container {
+        max-width: 425px;
+        margin:0 auto;
+    }
+}
+@include min(480px) {
+    .container {
+        max-width: 450px;
+    }
+}
+@include min(576px) {
+    .container {
+        max-width: 576px;
+    }
+}
+
+@include min(768px) {
+    .container {
+        max-width: 738px;
+    }
+}
+
+@include min(992px) {
+    .container {
+        max-width: 990px;
+    }
+}
+
+@include min(1200px) {
+    .container {
+        max-width: 1170px;
+    }
+}
+@include min(1360px) {
+    .container {
+        max-width: 1350px;
+    }
+}
+@include min(1440px){
+    .container{
+        max-width:1410px;
+    }
+}
+@include min(1560px) {
+    .container {
+        max-width: 1530px;
+    }
+}
+@include min(1600px){
+    .container {
+        max-width:1200px;
+    }
+}
+@include min(1700px) {
+    .container {
+        max-width: 1600px;
+        margin:0 auto;
+    }
+}
+@include min(1920px) {
+    .container {
+        max-width: 1820px;
+        margin:0 auto;
+    }
+}
