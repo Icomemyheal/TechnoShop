@@ -26,7 +26,7 @@
             <div>
               <h3 style="font-family:'Lato', sans-serif; color:#1d1d1d; font-weight:700;">{{$product->name}}</h3>
               <p style="font-weight:500;">Загальна кількість товару: <span style="color:#3e77aa;">{{ $product->pivot->count }} шт</span></p>
-              <p style="font-weight:500;">Стара ціна: <span style="color:#c4c7c9;">{{$product->getOldPrice()}}₴</span> <span style="color:#1ec667; font-weight:500;">Ціна зі знижкою: <span style="color:#1ec667;">{{$product->price}}₴</span></span></p>
+              <p style="font-weight:500;">Стара ціна: <span style="color:#c4c7c9;">{{$product->getOldPrice()}}₴</span> <span style="font-weight:500;">Ціна зі знижкою: <span style="color:#1ec667;">{{$product->price}}₴</span></span></p>
               <p style="font-weight:500;">Вартість замовлення: <span style="color:#067b39;">{{$product->getProductPriceForCount()}}₴</p>
             </div>
           </li>
