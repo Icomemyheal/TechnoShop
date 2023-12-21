@@ -42,30 +42,9 @@
         max-width: 1170px;
     }
 }
-@include min(1360px) {
-    .container {
-        max-width: 1350px;
-    }
-}
 @include min(1440px){
     .container{
         max-width:1410px;
-    }
-}
-@include min(1560px) {
-    .container {
-        max-width: 1530px;
-    }
-}
-@include min(1600px){
-    .container {
-        max-width:1200px;
-    }
-}
-@include min(1700px) {
-    .container {
-        max-width: 1600px;
-        margin:0 auto;
     }
 }
 @include min(1920px) {

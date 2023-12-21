@@ -75,8 +75,8 @@
                     </a>
 
                     <ul class="footer__nav--list">
-                        <li class="footer__nav--item"><a href="#" class="footer__nav--link">Головна</a></li>
-                        <li class="footer__nav--item"><a href="#" class="footer__nav--link">Категорії</a></li>
+                        <li class="footer__nav--item"><a href="{{route('index')}}" class="footer__nav--link">Головна</a></li>
+                        <li class="footer__nav--item"><a href="{{route('categories')}}" class="footer__nav--link">Категорії</a></li>
                         <li class="footer__nav--item"><a href="/admin" class="footer__nav--link">Адмін-панель</a></li>
                     </ul>
 
@@ -124,7 +124,9 @@
                 </div>
             </div>
         </footer>
-
-        <script src="/js/scripts.js"></script>
+        
+        <script src="/js/manifest.js"></script>
+        <script src="/js/vendor.js"></script>
+        <script src="/js/app.js" type="module"></script>
     </body>
 </html>

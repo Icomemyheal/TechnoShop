@@ -3,7 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 use App\Models\Order;
+use App\Mail\OrderMail;
 
 class BasketController extends Controller
 {
@@ -25,12 +27,6 @@ class BasketController extends Controller
             session(['orderId' => $order->id]);
         }
 
-        // if(is_null($orderId)){
-        //     $order = Order::create()->id;
-        //     session(['orderId' => $order->id]);
-        // } else {
-        //     $order = Order::find($orderId);
-        // }
         if($order->products->contains($productId)){
            $pivotRow = $order->products()->where('product_id', $productId)->first()->pivot;
            $pivotRow->count++;

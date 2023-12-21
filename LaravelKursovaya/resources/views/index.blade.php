@@ -5,9 +5,55 @@
 @section('content')
         <section class="hero">
             <div class="container">
-                <div class="hero__inner">
-                    <h1 class="hero__h1">Інтернет магазин - <span>Techno</span><span>Shop</span> Усе, що Вам необхідне саме тут</h1>
-                    <p class="hero__p">Наш інтернет магазин комп'ютерних комплектуючих - це місце, де ви знайдете все необхідне для свого комп'ютера.У нашому асортименті великий вибір процесорів, материнських плат, відеокарт, оперативної пам'яті, жорстких дисків, SSD-накопичувачів та багато іншого.</p>
+                <div class="swiper hero__swiper">
+                    <div class="swiper-wrapper hero__swiper-wrapper">
+                        <div class="swiper-slide hero__swiper-slide">
+                            <img src="/images/asus_rtx_3060-slider.png" alt="asus_rtx_3060">
+                            <div class="hero__slide-about">
+                                <p class="hero__slide-title">Тільки в нас!</p>
+                                <p class="hero__slide-price">Ціна: <span class="hero__slide-oldPrice">14999₴</span> <span class="hero__slide-currentPrice">9999₴</span></p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide hero__swiper-slide">
+                            <img src="/images/asus_rtx_4070_ti-slider.png" alt="asus_rtx_4070_ti">
+                            <div class="hero__slide-about">
+                                <p class="hero__slide-title">Тільки в нас! <span>Акція</span></p>
+                                <p class="hero__slide-price">Ціна: <span class="hero__slide-oldPrice">34999₴</span> <span class="hero__slide-currentPrice">30999₴</span></p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide hero__swiper-slide">
+                            <img src="/images/kingston_fury_ddr4_rgb-slider.png" alt="kingston_fury_ddr4_rgb">
+                            <div class="hero__slide-about">
+                                <p class="hero__slide-title">Тільки в нас!</p>
+                                <p class="hero__slide-price">Ціна: <span class="hero__slide-oldPrice">4199₴</span> <span class="hero__slide-currentPrice">3699₴</span></p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide hero__swiper-slide">
+                            <img src="/images/g_skill_ddr5_6000-slider.png" alt="g_skill_ddr5_6000">
+                            <div class="hero__slide-about">
+                                <p class="hero__slide-title">Тільки в нас! <span>Акція</span></p>
+                                <p class="hero__slide-price">Ціна: <span class="hero__slide-oldPrice">19999</span> <span class="hero__slide-currentPrice">16999₴</span></p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide hero__swiper-slide">
+                            <img src="/images/i7_13700f-slider.png" alt="i7_13700f">
+                            <div class="hero__slide-about">
+                                <p class="hero__slide-title">Тільки в нас! <span>Акція</span></p>
+                                <p class="hero__slide-price">Ціна: <span class="hero__slide-oldPrice">17199</span> <span class="hero__slide-currentPrice">14799₴</span></p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide hero__swiper-slide">
+                            <img src="/images/msi_rtx_3060-slider.png" alt="msi_rtx_3060-slider">
+                            <div class="hero__slide-about">
+                                <p class="hero__slide-title">Тільки в нас! <span>Акція</span></p>
+                                <p class="hero__slide-price">Ціна: <span class="hero__slide-oldPrice">17499</span> <span class="hero__slide-currentPrice">15999₴</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination hero__swiper-pagination"></div>
+
+                    <div class="swiper-button-next hero__swiper-next"></div>
+                    <div class="swiper-button-prev hero__swiper-prev"></div>
                 </div>
             </div>
         </section>
@@ -22,6 +68,10 @@
                                 <h3 class="filters__name">{{$category->name}}</h3>
                             </li>
                         @endforeach
+                        <li class="filters__card-item js-filter-btn item-all" data-filter_type="show-all">
+                            <img src="/images/all-image.png" alt="all-products">
+                            <h3 class="filters__name">Усі товари</h3>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -80,7 +130,7 @@
                             <p class="aboutUs__p">Ми - команда фахівців, яка діє на ринку комп'ютерних комплектуючих вже протягом багатьох років. За цей час ми зарекомендували себе як надійний постачальник високоякісних комплектуючих для комп'ютерів та ноутбуків.</p>
                             <p class="aboutUs__p">Наша місія - забезпечити клієнтів найкращими рішеннями для їхніх потреб у сфері ІТ. Ми розуміємо, наскільки важливо мати доступ до надійних та швидких комплектуючих для збільшення продуктивності вашого комп'ютера. Тому ми пропонуємо широкий вибір продукції від провідних виробників світу, таких як Intel, AMD, NVIDIA, ASUS, MSI, та багатьох інших.</p>
                             <p class="aboutUs__p">Ми розуміємо, що кожен клієнт має свої унікальні потреби, тому пропонуємо індивідуальний підхід до кожного з вас. Незалежно від того, чи ви геймер, професіонал в галузі відеомонтажу, або просто шукаєте оновлення для вашого дому чи офісу - ми завжди готові вас підтримати.</p>
-                            <span>Довіряйте своїй технологічній інфраструктурі професіоналам. Обирайте "TechnoShop" і покращуйте свій досвід в галузі ІТ разом з нами!</span>
+                            <span>Довіряйте своїй технологічній інфраструктурі професіоналам. Обирайте TechnoShop і покращуйте свій досвід в галузі ІТ разом з нами!</span>
                         </div>
                     </div>  
                 </div>
